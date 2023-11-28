@@ -6,9 +6,6 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 int width;
 int height;
 string input;
-int caseInput;
-bool flagHeight = true;
-bool flagWidth = true;
 bool running = true;
 
 
@@ -200,8 +197,6 @@ void editMultipleTile(char tile)
     char whichAxis;
     int min = 1;
     int max = 1;
-    int szer = 1;
-    int wys = 1;
 
     Console.Clear();
     showMaze();
@@ -348,7 +343,6 @@ void writeToFile(string input)
 
 void readFile(string path)
 {
-    string line;
     try
     {
         StreamReader read = new StreamReader(path + ".lab");
